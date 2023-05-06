@@ -1,0 +1,13 @@
+以下是一个简单的Python指令，用于识别蓝牙设备是否在线：
+
+```
+import bluetooth
+
+def is_bluetooth_device_online(mac_address):
+    nearby_devices = bluetooth.discover_devices()
+    return mac_address in nearby_devices
+
+# Example usage: is_bluetooth_device_online('00:11:22:33:44:55') returns True if the device is nearby and online
+```
+
+这个指令使用了Python的bluetooth模块来扫描附近的蓝牙设备。它接受一个参数（蓝牙设备的MAC地址），然后使用discover_devices()函数来获取附近的蓝牙设备列表。如果输入的
