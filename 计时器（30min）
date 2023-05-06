@@ -1,0 +1,13 @@
+import time
+
+# 计时器
+def timer():
+    print("计时器已启动！")
+    while True:
+        # 执行计时器操作
+        print("时间已过半小时！")
+        # 等待半小时
+        time.sleep(1800)
+
+# 启动计时器
+timer()
