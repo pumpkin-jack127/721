@@ -1,0 +1,9 @@
+import time
+
+# 要输出的字符
+char = '*'
+
+# 持续输出字符
+while True:
+    print(char, end='')
+    time.sleep(0.1)
