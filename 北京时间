@@ -1,0 +1,11 @@
+from datetime import datetime
+import pytz
+
+# 设置时区为北京时间
+beijing_tz = pytz.timezone('Asia/Shanghai')
+
+# 获取当前时间
+now = datetime.now(beijing_tz)
+
+# 输出北京时间
+print("北京时间为：", now)
