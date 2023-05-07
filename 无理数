@@ -1,0 +1,6 @@
+import math
+
+# 生成π的值
+pi = math.pi
+
+print("π的值为：", pi)
